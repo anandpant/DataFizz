@@ -1,0 +1,12 @@
+1. You will have to use something like urlib to download in python or equivalent in whichever language.
+Likely pass your request through a list of rotating proxies to avoid triggering dos protection/or get whitelisted,
+and possibly emulate a web browser if the site has bot protection. Other than that change the soup tags you look for.
+
+2. beautifulsoup handles tree navigation, so find where the data you want is located on the html page and change a few tags.
+
+3. So this question is a bit more challenging to answer. The reverse sorting algorithm in python like most languages has
+an algorithmic complexity of nlog(n) for both best and worse case. First to fit is also nlog(n) so the order
+hasn't changed only the coefficient. I could have implimented a more exact bin packing solution (fewest boxes), but not
+without seriously increasing the resources needed. I could have also implimented a custom reverse sorting algorithm if
+I knew the data was mostly ordered in a certain way. I could have added some validation that excluded the index for 10.0
+lb boxes, but in this scope the extra complexity doesn't justify it.
